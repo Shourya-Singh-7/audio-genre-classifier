@@ -1,0 +1,19 @@
+# Data
+Data/
+*.wav
+*.mp3
+*.ogg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+
+# OS
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
