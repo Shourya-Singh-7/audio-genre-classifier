@@ -22,7 +22,7 @@ async function predict() {
   document.getElementById("loading").classList.remove("hidden");
   document.getElementById("result").classList.add("hidden");
 
-  const response = await fetch("http://127.0.0.1:8000/predict", {
+  const response = await fetch("https://audio-genre-classifier.onrender.com/predict", {
     method: "POST",
     body: formData
   });

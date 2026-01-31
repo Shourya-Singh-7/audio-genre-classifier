@@ -1,5 +1,5 @@
 async function loadMetrics() {
-  const res = await fetch("http://127.0.0.1:8000/metrics");
+  const res = await fetch("https://audio-genre-classifier.onrender.com/metrics");
   const data = await res.json();
 
   document.getElementById("accuracyText").innerHTML =
