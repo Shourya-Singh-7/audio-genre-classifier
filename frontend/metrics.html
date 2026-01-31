@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Model Performance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="card">
+      <nav>
+        <a href="index.html">Predict</a>
+        <a href="metrics.html">Model Stats</a>
+      </nav>
+
+      <h1>📊 Model Performance</h1>
+
+      <p><strong>Overall Accuracy:</strong> 85.3%</p>
+
+      <p>Confusion Matrix</p>
+      <img
+        src="assets/confusion_matrix.png"
+        alt="Confusion Matrix"
+        style="width:100%; border-radius:10px; margin-top:10px;"
+      />
+
+      <p style="font-size:12px;color:#aaa">
+        Evaluated on the GTZAN dataset using handcrafted audio features and an MLP classifier.
+      </p>
+
+      </p>
+    </div>
+  </div>
+</body>
+</html>

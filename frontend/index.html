@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Genre Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="card">
+      <nav>
+        <a href="index.html">Predict</a>
+        <a href="metrics.html">Model Stats</a>
+      </nav>
+
+      <h1>🎵 Genre Prediction</h1>
+      <p>Upload an audio file</p>
+
+      <input type="file" id="audioFile" accept=".wav,.mp3,.ogg" />
+      <button onclick="predict()">Predict</button>
+      <input type="file" id="audioFile" accept=".wav,.mp3,.ogg" onchange="previewAudio()" />
+
+      <audio id="audioPreview" controls class="hidden"></audio>
+
+      <button onclick="predict()">Predict</button>
+
+      <div id="loading" class="hidden">⏳ Analyzing...</div>
+
+      <div id="result" class="hidden">
+        <h2 id="genre"></h2>
+
+        <div class="bar">
+          <div id="confidenceBar"></div>
+        </div>
+
+        <p id="confidenceText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
